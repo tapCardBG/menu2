@@ -3,153 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delicious Eats | Online Restaurant Menu</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Night Club Digital Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <style>
         body {
+            background-color: #121212;
+            color: #f0f0f0;
             font-family: 'Roboto', sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f9f9f9; /* Light gray */
-            color: #333; /* Dark gray */
-        }
-        header {
-            background-color: #5e3b5e; /* Dark purple */
             padding: 20px;
-            color: #f9f9f9; /* Light gray */
+        }
+        h1, h2 {
+            font-family: 'Montserrat', sans-serif;
             text-align: center;
-            border-bottom: 2px solid #aa85aa; /* Lighter purple */
+            color: #f0a;
         }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
+        .menu-section {
+            margin-top: 40px;
         }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            color: #f9f9f9; /* Light gray */
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px; /* Increased font size */
-        }
-        main {
-            padding: 20px;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        h2 {
-            color: #5e3b5e; /* Dark purple */
-            text-transform: uppercase;
-            font-size: 28px; /* Increased font size */
-            margin-bottom: 20px;
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
         }
         .menu-item {
-            background-color: #fff; /* White */
+            background-color: #262626;
+            border: 1px solid #333;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            margin-bottom: 20px;
+            padding: 15px;
+            flex: 1 1 300px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
-        .menu-item img {
-            width: 100%;
-            height: auto;
+        .item-info {
+            display: flex;
+            flex-direction: column;
         }
-        .menu-item-details {
-            padding: 20px;
+        .item-name {
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
         }
-        .menu-item-details h3 {
-            margin-top: 0;
-            font-size: 24px; /* Increased font size */
-            margin-bottom: 10px;
-            color: #5e3b5e; /* Dark purple */
+        .item-description, .item-price {
+            font-size: 14px;
+            font-weight: 300;
+            opacity: 0.9;
         }
-        .menu-item-details p {
-            margin: 5px 0;
-            font-size: 16px;
-            color: #333; /* Dark gray */
+        .item-price {
+            font-weight: bold;
+            margin-top: 5px; /* Space between description and price */
         }
-        footer {
-            background-color: #5e3b5e; /* Dark purple */
-            padding: 20px;
-            color: #f9f9f9; /* Light gray */
-            text-align: center;
-            font-size: 14px; /* Decreased font size */
+        .item-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Delicious Eats</h1>
-        <nav>
-            <ul>
-                <li><a href="#starters">Starters</a></li>
-                <li><a href="#mains">Mains</a></li>
-                <li><a href="#desserts">Desserts</a></li>
-                <li><a href="#drinks">Drinks</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="starters">
-            <h2>Starters</h2>
+    <h1>Night Club Menu</h1>
+    <div class="menu-section">
+        <h2>Cocktails</h2>
+        <div class="menu-container">
             <div class="menu-item">
-                <img src="starter1.jpg" alt="Starter 1">
-                <div class="menu-item-details">
-                    <h3>Starter 1</h3>
-                    <p>Description of the starter. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <p>Price: $10.99</p>
+                <div class="item-info">
+                    <div class="item-name">Cocktail Sunshine</div>
+                    <div class="item-description">A refreshing mix of vodka, orange juice, and grenadine.</div>
+                    <div class="item-price">$12</div>
                 </div>
+                <img src="https://assets.bonappetit.com/photos/62cdd8cedc3e934b224d8fb5/1:1/w_2560%2Cc_limit/0712-paloma-lede.jpg" alt="Cocktail Sunshine" class="item-image">
             </div>
-            <!-- Add more starter items here -->
-        </section>
-        
-        <section id="mains">
-            <h2>Mains</h2>
             <div class="menu-item">
-                <img src="main1.jpg" alt="Main 1">
-                <div class="menu-item-details">
-                    <h3>Main 1</h3>
-                    <p>Description of the main. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <p>Price: $15.99</p>
+                <div class="item-info">
+                    <div class="item-name">Midnight Martini</div>
+                    <div class="item-description">Classic martini with a hint of espresso.</div>
+                    <div class="item-price">$10</div>
                 </div>
+                <img src="https://www.wineenthusiast.com/wp-content/uploads/2023/05/04_23_Paloma_HERO_Stocksy_4620231_1920x1280.jpg" alt="Midnight Martini" class="item-image">
             </div>
-            <!-- Add more main items here -->
-        </section>
-
-        <section id="desserts">
-            <h2>Desserts</h2>
+        </div>
+    </div>
+    <div class="menu-section">
+        <h2>Shots</h2>
+        <div class="menu-container">
             <div class="menu-item">
-                <img src="dessert1.jpg" alt="Dessert 1">
-                <div class="menu-item-details">
-                    <h3>Dessert 1</h3>
-                    <p>Description of the dessert. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <p>Price: $7.99</p>
+                <div class="item-info">
+                    <div class="item-name">Fireball</div>
+                    <div class="item-description">Cinnamon whisky shot, fiery and sweet.</div>
+                    <div class="item-price">$5</div>
                 </div>
+                <img src="https://media.istockphoto.com/id/502645415/photo/shots-cocktails.jpg?s=612x612&w=0&k=20&c=-eHFh3QOGLIjkddGY3-b3QTcVazAb82YYNB_WBN7cxA=" alt="Fireball Shot" class="item-image">
             </div>
-            <!-- Add more dessert items here -->
-        </section>
-
-        <section id="drinks">
-            <h2>Drinks</h2>
             <div class="menu-item">
-                <img src="drink1.jpg" alt="Drink 1">
-                <div class="menu-item-details">
-                    <h3>Drink 1</h3>
-                    <p>Description of the drink. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <p>Price: $3.99</p>
+                <div class="item-info">
+                    <div class="item-name">Lemon Drop</div>
+                    <div class="item-description">Vodka and lemon juice, with a sugary rim.</div>
+                    <div class="item-price">$4</div>
                 </div>
+                <img src="lemon-drop-shot.jpg" alt="Lemon Drop Shot" class="item-image">
             </div>
-            <!-- Add more drink items here -->
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Delicious Eats. All rights reserved. | Designed by YourName</p>
-    </footer>
+        </div>
+    </div>
+    <div class="menu-section">
+        <h2>Beverages</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">Mineral Water</div>
+                    <div class="item-description">Fresh sparkling mineral water.</div>
+                    <div class="item-price">$2</div>
+                </div>
+                <img src="mineral-water.jpg" alt="Mineral Water" class="item-image">
+            </div>
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">Soda</div>
+                    <div class="item-description">Choice of various flavored sodas.</div>
+                    <div class="item-price">$3</div>
+                </div>
+                <img src="soda.jpg" alt="Soda" class="item-image">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
